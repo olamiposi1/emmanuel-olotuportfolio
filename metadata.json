@@ -1,0 +1,6 @@
+{
+  "name": "Alex Carter Portfolio",
+  "description": "Recreated portfolio banner and interactive showcase layout inspired by Alex Carter's design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
