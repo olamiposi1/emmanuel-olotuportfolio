@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 // Import generated image assets
 import turboImg from '../assets/images/Turbo.jpg';
 import vaultxImg from '../assets/images/Vaultx.jpg';
-import dashboardImg from '../assets/images/dashboard.jpg';
+import dashboardImg from '../assets/images/Dashboard.jpg';
 import artchainImg from '../assets/images/Artchain.jpg';
 import holypepeImg from '../assets/images/Holypepe.jpg';
 import mechalinkHeroImg from '../assets/images/Mechalink.jpg';
