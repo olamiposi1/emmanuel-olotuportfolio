@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Import generated image assets
-import turboImg from '../assets/images/turbo.jpg';
+import turboImg from '../assets/images/Turbo.jpg';
 import vaultxImg from '../assets/images/Vaultx.jpg';
 import dashboardImg from '../assets/images/dashboard.jpg';
 import artchainImg from '../assets/images/Artchain.jpg';
