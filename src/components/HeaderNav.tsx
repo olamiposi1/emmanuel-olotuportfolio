@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sun, Moon, Menu, X } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 interface HeaderNavProps {
   onOpenContactModal: () => void;
@@ -16,6 +17,8 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navItems = [
     { name: 'Home', href: '#home' },
@@ -30,10 +33,27 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
       setActiveSection(name);
     }
     setMobileMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+
+    if (href.startsWith('#')) {
+      if (location.pathname !== '/') {
+        navigate('/');
+        window.setTimeout(() => {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 50);
+        return;
+      }
+
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+      return;
     }
+
+    navigate(href);
   };
 
   const toggleTheme = () => {
