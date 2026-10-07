@@ -11,6 +11,7 @@ type WishlistItem = {
   note?: string;
   action?: WishlistAction;
   whatsappMessage?: string;
+  image: string;
 };
 
 const WHATSAPP_NUMBER = '2347043435687'; // 07043435687 in international format
@@ -21,82 +22,117 @@ const wishlistItems: WishlistItem[] = [
     note: 'The best kind of blessing, always appreciated. Tap to send one via WhatsApp.',
     action: 'whatsapp',
     whatsappMessage: 'Hi Lajuicy / Emmanuel! 🙏 Sending you a birthday prayer from your wishlist page 🎉',
+    image:
+      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80',
   },
   {
     name: 'Money',
-    note: 'Because I am a big believer in financial freedom and cake. Tap for account details.',
+    note: 'Because Why Not?. Tap for account details.',
     action: 'money',
+    image:
+      'https://images.unsplash.com/photo-1593672715438-d88a70629abe?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Cake',
-    note: 'For the birthday vibes, obviously.',
+    note: 'For the birthday aesthetics, obviously. LMAO',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you a cake!",
+    image:
+      'https://images.unsplash.com/photo-1559620192-032c4bc4674e?auto=format&fit=crop&w=900&q=80',
   },
   {
     name: 'Laptop',
-    note: 'A reliable machine to keep building, designing, and vibe-coding.',
+    note: 'A reliable laptop to keep building, designing, and continuing my propmt engineering journey.',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you a laptop!",
+    image:
+      'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80',
   },
   {
     name: 'Phone (iPhone preferred)',
-    note: 'A little upgrade would make me very happy.',
+    note: 'A little upgrade would make me very happy. NGL',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you an iPhone!",
+    image:
+      'https://images.unsplash.com/photo-1788222465515-74200def1fbd?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Apple Watch / Smart watch',
-    note: 'A very stylish way to keep time and stay on track.',
+    note: 'A very stylish way to keep time and stay on track. KEK',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you an Apple Watch!",
+    image:
+      'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=900&q=80',
   },
   {
-    name: 'Sunglasses',
-    note: 'For sunny days and main-character energy.',
+    name: 'Smart glasses',
+    note: 'Stylish eyewear with a little extra tech and a lot of cool factor.',
     action: 'whatsapp',
-    whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you sunglasses!",
+    whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you smart glasses!",
+    image: '/src/assets/images/smartglasses.jpeg',
   },
   {
     name: 'Perfume',
-    note: 'Fresh, classy, and celebratory.',
+    note: 'Ungba me, My Lord.',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you perfume!",
+    image:
+      'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80',
   },
   {
     name: 'Wireless Earbuds / Headphones',
-    note: 'For music, calls, and locking in while working.',
+    note: 'For music, calls, and locking in kpa while working.',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you wireless earbuds!",
+    image:
+      'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80',
   },
   {
     name: 'External Monitor',
     note: 'More screen space for design and code, always welcome.',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you an external monitor!",
+    image:
+      'https://images.unsplash.com/photo-1588200908342-23b585c03e26?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
-    name: 'Office Chair',
-    note: 'For the long hours at the desk, my back would thank you.',
+    name: 'Ergonomic Office Chair',
+    note: 'Will be a very big upgrade for my little workspace and my back will thank you.',
     action: 'whatsapp',
-    whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you an office chair!",
+    whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you an ergonomic office chair!",
+    image:
+      'https://images.unsplash.com/photo-1688578735427-994ecdea3ea4?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Portable Charger / Power Bank',
-    note: 'Small, useful, and always comes in handy.',
+    note: 'Always comes in handy.',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you a power bank!",
+    image:
+      'https://images.unsplash.com/photo-1594843665794-446ce915d840?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    name: 'Itel PowerTank',
+    note: 'A portable power station to keep life running when Nepa wan embarrass me.',
+    action: 'whatsapp',
+    whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you an Itel PowerTank!",
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/25/9197814/1.jpg?1890',
   },
   {
     name: 'Bluetooth Speaker',
     note: 'For good vibes while working or relaxing.',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you a Bluetooth speaker!",
+    image:
+      'https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?auto=format&fit=crop&w=900&q=80',
   },
   {
     name: 'Money (again, lol)',
-    note: 'Because who says no to a little extra joy? Tap for account details.',
+    note: 'Because who says no AGAIN? Tap for account details.',
     action: 'money',
+    image:
+      'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80',
   },
 ];
 
@@ -233,21 +269,18 @@ export const WishlistPage: React.FC = () => {
           <section className="mt-8 sm:mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {wishlistItems.map((item, index) => {
               const isActionable = Boolean(item.action);
-              const iconToShow =
-                item.action === 'whatsapp' ? (
-                  <MessageCircle className="w-5 h-5" />
-                ) : item.action === 'money' ? (
-                  <Heart className="w-5 h-5" />
-                ) : (
-                  <Gift className="w-5 h-5" />
-                );
 
               const cardContent = (
                 <>
-                  <div className="flex items-center justify-between gap-3 mb-4">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#f5efe9] dark:bg-neutral-800 text-amber-700 dark:text-amber-400">
-                      {iconToShow}
-                    </div>
+                  <div className="overflow-hidden rounded-[22px] mb-4">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="mb-4 flex items-center justify-between gap-3">
                     <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-neutral-400 dark:text-neutral-500">
                       {String(index + 1).padStart(2, '0')}
                     </span>
@@ -270,7 +303,7 @@ export const WishlistPage: React.FC = () => {
               );
 
               const baseClasses =
-                'group rounded-[28px] border border-neutral-200/80 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-5 sm:p-6 shadow-[0_10px_28px_rgba(0,0,0,0.03)] transition-all duration-300 text-left w-full';
+                'group rounded-[28px] border border-neutral-200/80 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-4 sm:p-5 shadow-[0_10px_28px_rgba(0,0,0,0.03)] transition-all duration-300 text-left w-full overflow-hidden';
 
               if (isActionable) {
                 return (

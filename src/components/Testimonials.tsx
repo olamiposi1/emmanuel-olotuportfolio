@@ -27,6 +27,14 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: 'Editor, The Polity',
     rating: '4.9/5',
   },
+  {
+    id: 't-3',
+    quote:
+      'I came across Posi, the web developer, through a post on X (formerly Twitter) where he shared an insight that was genuinely helpful to me at the time. That initial interaction led to me working with him on multiple projects, and I can confidently say that he has delivered exceptionally well on every single one. From the quality of his work to his attention to detail and ability to understand exactly what I need, Posi has consistently exceeded my expectations. Every project I’ve entrusted to him has been executed perfectly, professionally, and with great attention to detail. I’ve worked with several developers, but Posi stands out for his reliability, technical expertise, and commitment to delivering quality work. I have no hesitation recommending him to anyone looking for a skilled and dependable web developer.',
+    author: 'Abiodun O. Ajibola',
+    role: 'Client',
+    rating: '5.0/5',
+  },
 ];
 
 export const Testimonials: React.FC = () => {
