@@ -3,6 +3,7 @@ import { Gift, Heart, Sparkles, ArrowLeft, MessageCircle, Copy, Check, X } from 
 import { Link } from 'react-router-dom';
 import { HeaderNav } from './HeaderNav';
 import { Footer } from './Footer';
+import smartGlassesImage from '../assets/images/smartglasses.jpeg';
 
 type WishlistAction = 'whatsapp' | 'money';
 
@@ -69,7 +70,7 @@ const wishlistItems: WishlistItem[] = [
     note: 'Stylish eyewear with a little extra tech and a lot of cool factor.',
     action: 'whatsapp',
     whatsappMessage: "Hi Emmanuel! Happy birthday bro 🎉 I'd love to get you smart glasses!",
-    image: '/src/assets/images/smartglasses.jpeg',
+    image: smartGlassesImage,
   },
   {
     name: 'Perfume',
